@@ -108,12 +108,12 @@ while running:
                 pygame.event.get()
                 if pygame.mouse.get_pressed()[0] and arr[0][0] == 0:
 
-                    print("yay0-1")
                     counter += 1
                     if xoro == True:
                         arr[0][0] = 1
                     else:
                         arr[0][0] = 2
+                print("yay0-1")
 
     if x >= 166:
         if x <= 332:
@@ -126,7 +126,7 @@ while running:
                         arr[0][1] = 1
                     else:
                         arr[0][1] = 2
-                    print("yay0-2")
+                print("yay0-2")
     print(counter)
 
     if x >= 332:
@@ -139,7 +139,7 @@ while running:
                         arr[0][2] = 1
                     else:
                         arr[0][2] = 2
-                    print("yay0-3")
+                print("yay0-3")
 
     if x >= 0:
         if x <= 166:
@@ -152,7 +152,7 @@ while running:
                             arr[1][0] = 1
                         else:
                             arr[1][0] = 2
-                        print("yay1-1")
+                    print("yay1-1")
     if x >= 166:
         if x <= 332:
             if y >= 166:
