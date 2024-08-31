@@ -13,13 +13,17 @@ running = True
 
 rows, cols = (3, 3)
 arr = [[0 for i in range(cols)] for j in range(rows)]
+arr[0][0]
 
 while running:
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    
+    for rows in arr:
+        print(arr)
+
+
     screen.fill("yellow")
     pygame.draw.line(screen,"black",(0,332),(500,332),5)
     pygame.draw.line(screen,"black",(0,166),(500,166),5)
@@ -93,16 +97,8 @@ while running:
             X_at_02 = my_font.render('O', False, (0, 0, 0))
             screen.blit(X_at_02, (360, 336))
 
-
-
-
-
-
-
     pygame.display.flip()
-    arr[0][0]
-    for row in arr:
-        print(arr)
+
 
     x,y = pygame.mouse.get_pos()
 
