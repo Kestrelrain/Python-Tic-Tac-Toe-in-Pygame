@@ -20,7 +20,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    for rows in arr:
+    for rows in "1":
         print(arr)
 
 
