@@ -1,8 +1,8 @@
 import pygame
 
 counter = 0
-
 xoro = False
+win_flag = False
 # pygame setup
 pygame.init()
 pygame.font.init
@@ -268,6 +268,38 @@ while running:
          if arr[1][1] == 2:
               if arr[2][0] == 2:
                    print("O wins")
+
+
+    # win detection for vertical
+    if arr[0][0] == 1:
+         if arr[1][0] == 1:
+              if arr[2][0] == 1:
+                   print("X wins")
+    if arr[0][0] == 2:
+         if arr[1][0] == 2:
+              if arr[2][0] == 2:
+                   print("O wins")
+
+
+    if arr[0][1] == 1:
+         if arr[1][1] == 1:
+              if arr[2][1] == 1:
+                   print("X wins")
+    if arr[0][1] == 2:
+         if arr[1][1] == 2:
+              if arr[2][1] == 2:
+                   print("O wins")
+
+
+    if arr[0][2] == 1:
+         if arr[1][2] == 1:
+              if arr[2][2] == 1:
+                   print("X wins")
+    if arr[0][2] == 2:
+         if arr[1][2] == 2:
+              if arr[2][2] == 2:
+                   print("O wins")
+
 
 
 
