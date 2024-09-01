@@ -218,6 +218,41 @@ while running:
                         else:
                             arr[2][2] = 2
                     print("yay2-3")
+    # win detection for horazonal
+    if arr[0][0] == 1:
+         if arr[0][1] == 1:
+              if arr[0][2] == 1:
+                   print("X wins")
+    if arr[0][0] == 2:
+         if arr[0][1] == 2:
+              if arr[0][2] == 2:
+                   print("O wins")
+
+
+    if arr[1][0] == 1:
+         if arr[1][1] == 1:
+              if arr[1][2] == 1:
+                   print("X wins")
+    if arr[1][0] == 2:
+         if arr[1][1] == 2:
+              if arr[1][2] == 2:
+                   print("O wins")
+
+
+    if arr[2][0] == 1:
+         if arr[2][1] == 1:
+              if arr[2][2] == 1:
+                   print("X wins")
+    if arr[2][0] == 2:
+         if arr[2][1] == 2:
+              if arr[2][2] == 2:
+                   print("O wins")
+
+
+
+
+
+
 
     if counter % 2 == 0:
         # even
