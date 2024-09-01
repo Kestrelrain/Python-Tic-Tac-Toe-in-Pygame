@@ -31,71 +31,71 @@ while running:
     pygame.draw.line(screen,"black",(166,0),(166,500),5)
     pygame.draw.line(screen,"black",(332,0),(332,500),5)
     print(pygame.mouse.get_pos())
+    if win_flag == False:
+        if arr[0][0] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (34, 20))
+        if arr[0][0] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (34, 20))
 
-    if arr[0][0] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (34, 20))
-    if arr[0][0] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (34, 20))
+        if arr[0][1] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (200, 20))
+        if arr[0][1] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (200, 20))
 
-    if arr[0][1] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (200, 20))
-    if arr[0][1] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (200, 20))
-
-    if arr[0][2] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (360, 20))
-    if arr[0][2] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (360, 20))
-
-
-    if arr[1][0] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (34, 186))
-    if arr[1][0] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (34, 186))
-
-    if arr[1][1] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (200, 186))
-    if arr[1][1] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (200, 186))
-
-    if arr[1][2] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (360, 186))
-    if arr[1][2] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (360, 186))
+        if arr[0][2] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (360, 20))
+        if arr[0][2] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (360, 20))
 
 
-    if arr[2][0] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (34, 336))
-    if arr[2][0] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (34, 336))
+        if arr[1][0] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (34, 186))
+        if arr[1][0] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (34, 186))
 
-    if arr[2][1] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (200, 336))
-    if arr[2][1] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (200, 336))
+        if arr[1][1] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (200, 186))
+        if arr[1][1] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (200, 186))
 
-    if arr[2][2] == 1:
-            X_at_02 = my_font.render('X', False, (0, 0, 0))
-            screen.blit(X_at_02, (360, 336))
-    if arr[2][2] == 2:
-            X_at_02 = my_font.render('O', False, (0, 0, 0))
-            screen.blit(X_at_02, (360, 336))
+        if arr[1][2] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (360, 186))
+        if arr[1][2] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (360, 186))
+
+
+        if arr[2][0] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (34, 336))
+        if arr[2][0] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (34, 336))
+
+        if arr[2][1] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (200, 336))
+        if arr[2][1] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (200, 336))
+
+        if arr[2][2] == 1:
+                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                screen.blit(X_at_02, (360, 336))
+        if arr[2][2] == 2:
+                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                screen.blit(X_at_02, (360, 336))
 
     pygame.display.flip()
 
@@ -218,6 +218,7 @@ while running:
                         else:
                             arr[2][2] = 2
                     print("yay2-3")
+                    
     # win detection for horazonal
     #row 1
     if arr[0][0] == 1:
@@ -284,43 +285,37 @@ while running:
     if arr[0][0] == 1:
          if arr[1][0] == 1:
               if arr[2][0] == 1:
-                   win_flag == True
+                   win_flag = True
                    print("X wins")
     if arr[0][0] == 2:
          if arr[1][0] == 2:
               if arr[2][0] == 2:
-                   win_flag == True
+                   win_flag = True
                    print("O wins")
 
 
     if arr[0][1] == 1:
          if arr[1][1] == 1:
               if arr[2][1] == 1:
-                   win_flag == True
+                   win_flag = True
                    print("X wins")
     if arr[0][1] == 2:
          if arr[1][1] == 2:
               if arr[2][1] == 2:
-                   win_flag == True
+                   win_flag = True
                    print("O wins")
 
 
     if arr[0][2] == 1:
          if arr[1][2] == 1:
               if arr[2][2] == 1:
-                   win_flag == True
+                   win_flag = True
                    print("X wins")
     if arr[0][2] == 2:
          if arr[1][2] == 2:
               if arr[2][2] == 2:
-                   win_flag == True
+                   win_flag = True
                    print("O wins")
-
-
-
-
-
-
 
 
 
