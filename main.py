@@ -101,123 +101,123 @@ while running:
 
 
     x,y = pygame.mouse.get_pos()
-
-    if x >= 0:
-        if x <= 166:
-            if y <= 166:
-                pygame.event.get()
-                if pygame.mouse.get_pressed()[0] and arr[0][0] == 0:
-
-                    print("yay0-1")
-                    counter += 1
-                    if xoro == True:
-                        arr[0][0] = 1
-                    else:
-                        arr[0][0] = 2
-
-    if x >= 166:
-        if x <= 332:
-            if y <= 166:
-                pygame.event.get()
-                if pygame.mouse.get_pressed()[0] and arr[0][1] == 0:
-                    
-                    counter += 1
-                    if xoro == True:
-                        arr[0][1] = 1
-                    else:
-                        arr[0][1] = 2
-                    print("yay0-2")
-    print(counter)
-
-    if x >= 332:
-        if x <= 500:
-            if y <= 166:
-                pygame.event.get()
-                if pygame.mouse.get_pressed()[0] and arr[0][2] == 0:
-                    counter += 1
-                    if xoro == True:
-                        arr[0][2] = 1
-                    else:
-                        arr[0][2] = 2
-                    print("yay0-3")
-
-    if x >= 0:
-        if x <= 166:
-            if y >= 166:
-                if y <= 332:
+    if win_flag == False:
+        if x >= 0:
+            if x <= 166:
+                if y <= 166:
                     pygame.event.get()
-                    if pygame.mouse.get_pressed()[0] and arr[1][0] == 0:
+                    if pygame.mouse.get_pressed()[0] and arr[0][0] == 0:
+
+                        print("yay0-1")
                         counter += 1
                         if xoro == True:
-                            arr[1][0] = 1
+                            arr[0][0] = 1
                         else:
-                            arr[1][0] = 2
-                        print("yay1-1")
-    if x >= 166:
-        if x <= 332:
-            if y >= 166:
-                if y <= 332:
+                            arr[0][0] = 2
+
+        if x >= 166:
+            if x <= 332:
+                if y <= 166:
                     pygame.event.get()
-                    if pygame.mouse.get_pressed()[0] and arr[1][1] == 0:
+                    if pygame.mouse.get_pressed()[0] and arr[0][1] == 0:
+                        
                         counter += 1
                         if xoro == True:
-                            arr[1][1] = 1
+                            arr[0][1] = 1
                         else:
-                            arr[1][1] = 2
+                            arr[0][1] = 2
+                        print("yay0-2")
+        print(counter)
 
-                    print("yay1-2")
-    if x >= 332:
-        if x <= 500:
-            if y >= 166:
-                if y <= 332:
+        if x >= 332:
+            if x <= 500:
+                if y <= 166:
                     pygame.event.get()
-                    if pygame.mouse.get_pressed()[0] and arr[1][2] == 0:
+                    if pygame.mouse.get_pressed()[0] and arr[0][2] == 0:
                         counter += 1
                         if xoro == True:
-                            arr[1][2] = 1
+                            arr[0][2] = 1
                         else:
-                            arr[1][2] = 2
+                            arr[0][2] = 2
+                        print("yay0-3")
 
-                    print("yay1-3")
+        if x >= 0:
+            if x <= 166:
+                if y >= 166:
+                    if y <= 332:
+                        pygame.event.get()
+                        if pygame.mouse.get_pressed()[0] and arr[1][0] == 0:
+                            counter += 1
+                            if xoro == True:
+                                arr[1][0] = 1
+                            else:
+                                arr[1][0] = 2
+                            print("yay1-1")
+        if x >= 166:
+            if x <= 332:
+                if y >= 166:
+                    if y <= 332:
+                        pygame.event.get()
+                        if pygame.mouse.get_pressed()[0] and arr[1][1] == 0:
+                            counter += 1
+                            if xoro == True:
+                                arr[1][1] = 1
+                            else:
+                                arr[1][1] = 2
+
+                        print("yay1-2")
+        if x >= 332:
+            if x <= 500:
+                if y >= 166:
+                    if y <= 332:
+                        pygame.event.get()
+                        if pygame.mouse.get_pressed()[0] and arr[1][2] == 0:
+                            counter += 1
+                            if xoro == True:
+                                arr[1][2] = 1
+                            else:
+                                arr[1][2] = 2
+
+                        print("yay1-3")
 
 
-    if x >= 0:
-        if x <= 166:
-            if y >= 332:
-                if y <= 500:
-                    pygame.event.get()
-                    if pygame.mouse.get_pressed()[0] and arr[2][0] == 0:
-                        counter += 1
-                        if xoro == True:
-                            arr[2][0] = 1
-                        else:
-                            arr[2][0] = 2
-                    print("yay2-1")
-    if x >= 166:
-        if x <= 332:
-            if y >= 332:
-                if y <= 500:
-                    pygame.event.get()
-                    if pygame.mouse.get_pressed()[0] and arr[2][1] == 0:
-                        counter += 1
-                        if xoro == True:
-                            arr[2][1] = 1
-                        else:
-                            arr[2][1] = 2
+        if x >= 0:
+            if x <= 166:
+                if y >= 332:
+                    if y <= 500:
+                        pygame.event.get()
+                        if pygame.mouse.get_pressed()[0] and arr[2][0] == 0:
+                            counter += 1
+                            if xoro == True:
+                                arr[2][0] = 1
+                            else:
+                                arr[2][0] = 2
+                        print("yay2-1")
+        if x >= 166:
+            if x <= 332:
+                if y >= 332:
+                    if y <= 500:
+                        pygame.event.get()
+                        if pygame.mouse.get_pressed()[0] and arr[2][1] == 0:
+                            counter += 1
+                            if xoro == True:
+                                arr[2][1] = 1
+                            else:
+                                arr[2][1] = 2
 
-                    print("yay2-2")
-    if x >= 332:
-        if x <= 500:
-            if y >= 332:
-                if y <= 500:
-                    pygame.event.get()
-                    if pygame.mouse.get_pressed()[0] and arr[2][2] == 0:
-                        counter += 1
-                        if xoro == True:
-                            arr[2][2] = 1
-                        else:
-                            arr[2][2] = 2
-                    print("yay2-3")
+                        print("yay2-2")
+        if x >= 332:
+            if x <= 500:
+                if y >= 332:
+                    if y <= 500:
+                        pygame.event.get()
+                        if pygame.mouse.get_pressed()[0] and arr[2][2] == 0:
+                            counter += 1
+                            if xoro == True:
+                                arr[2][2] = 1
+                            else:
+                                arr[2][2] = 2
+                        print("yay2-3")
     # win detection for horazonal
     #row 1
     if arr[0][0] == 1:
