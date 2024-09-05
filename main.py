@@ -7,7 +7,8 @@ def main():
     # pygame setup
     pygame.init()
     pygame.font.init
-    my_font = pygame.font.SysFont('Comic Sans MS', 200)
+    my_font = pygame.font.SysFont('None', 200)
+    print(pygame.font.get_fonts())
     screen = pygame.display.set_mode((500,500))
     clock = pygame.time.Clock()
     running = True
@@ -34,68 +35,68 @@ def main():
         print(pygame.mouse.get_pos())
         
         if arr[0][0] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (34, 20))
         if arr[0][0] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (34, 20))
 
         if arr[0][1] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (200, 20))
         if arr[0][1] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (200, 20))
 
         if arr[0][2] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (360, 20))
         if arr[0][2] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (360, 20))
 
 
         if arr[1][0] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (34, 186))
         if arr[1][0] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (34, 186))
 
         if arr[1][1] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (200, 186))
         if arr[1][1] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (200, 186))
 
         if arr[1][2] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (360, 186))
         if arr[1][2] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (360, 186))
 
 
         if arr[2][0] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (34, 336))
         if arr[2][0] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (34, 336))
 
         if arr[2][1] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (200, 336))
         if arr[2][1] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (200, 336))
 
         if arr[2][2] == 1:
-                X_at_02 = my_font.render('X', False, (0, 0, 0))
+                X_at_02 = my_font.render('X', True, (0, 0, 0))
                 screen.blit(X_at_02, (360, 336))
         if arr[2][2] == 2:
-                X_at_02 = my_font.render('O', False, (0, 0, 0))
+                X_at_02 = my_font.render('O', True, (0, 0, 0))
                 screen.blit(X_at_02, (360, 336))
 
         pygame.display.flip()
